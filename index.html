@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire de Satisfaction Client</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Questionnaire de Satisfaction Client</h1>
+        <form id="survey-form">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="rating">Comment évalueriez-vous notre service ?</label>
+            <select id="rating" name="rating" required>
+                <option value="excellent">Excellent</option>
+                <option value="good">Bon</option>
+                <option value="average">Moyen</option>
+                <option value="poor">Mauvais</option>
+            </select>
+
+            <label for="rating">Seriez-vous prêt à retravailler avec nous à l'avenir ?</label>
+            <select id="rating" name="rating" required>
+                <option value="Yes">Oui</option>
+                <option value="No">Non</option>
+                <option value="Maybe">Peut-être</option>
+            </select>
+            
+            <label for="comments">Commentaires :</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            
+            <button type="submit">Soumettre</button>
+        </form>
+        <div id="thank-you-message" class="hidden">
+            <h2>Merci pour vos réponses !</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
